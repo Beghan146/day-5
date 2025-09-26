@@ -1,0 +1,20 @@
+copy one array to another one in c program
+
+#include <stdio.h>
+
+int main() {
+    int source[] = {1, 2, 3, 4, 5};
+    int destination[5];  // Make sure this is the same size as source
+
+    
+    for (int i = 0; i < 5; i++) {
+        destination[i] = source[i];
+    }
+
+       printf("Copied array: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", destination[i]);
+    }
+
+    return 0;
+}
